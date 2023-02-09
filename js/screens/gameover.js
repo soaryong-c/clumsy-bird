@@ -94,6 +94,11 @@ game.GameOverScreen = me.ScreenObject.extend({
             }
         }));
         me.game.world.addChild(this.dialog, 12);
+
+        // if (confirm("\n*********************\n**    Clumsy-bird     **\n*********************\n\nYou got to Score : " + game.data.steps.toString() + "\n\nRegister ?\n")) {
+            gameCenterSetScore(game.data.steps.toString());
+            console.log(window.gamecenter.data);
+        // }
     },
 
     onDestroyEvent: function() {
